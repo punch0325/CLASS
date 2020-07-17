@@ -18,15 +18,15 @@ public class StudentMain {
 		
 		Student stu = null; //객체의 이름만 선언해놓은 것
 		Application app = new Application();
-		StudentDTO stuD = new StudentDTO();
+		StudentDTO stuD = null;
 		
 		stuD.setName("회원1"); // 세터 메소드를 이용하여 필드 값 지정
 		System.out.println(stuD.getName()); // 게터 메소드를 이용하여 name 필드 값을 출력
 		
 		while (end) {
-			System.out.println("------------------------------------------------");
-			System.out.println("1.신규등록 | 2.출석체크 | 3.정보확인 | 4.정보수정 | 5.종료");
-			System.out.println("------------------------------------------------");
+			System.out.println("--------------------------------------------------------------------");
+			System.out.println("1.신규등록 | 2.출석체크 | 3.정보확인 | 4.정보수정 | 5.종료 | 6.DTO클래스를 이용한 객체");
+			System.out.println("--------------------------------------------------------------------");
 			
 			System.out.print("선택 > ");
 			menu = scan.nextInt();
@@ -46,8 +46,17 @@ public class StudentMain {
 				app.info_1(stu);
 			}else if (menu == 4) {
 				app.change(stu);
-			}else {
-				
+			}else if (menu == 6){
+				System.out.print("이름 : ");
+				name = scan.next();
+				System.out.print("주소 : ");
+				adress = scan.next();
+				System.out.print("전화번호 : ");
+				phone = scan.next();
+				stuD = new StudentDTO();
+				stuD.setName(name);
+				stuD.setAdress(adress);
+				stuD.setPhone(phone);
 			}
 			
 			
