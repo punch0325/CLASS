@@ -2,7 +2,7 @@ package test200716_class3;
 
 public class Student {
 
-// DTO(Data Taransfer Object) : 데이터를 담아서 전달하기 위한 클래스
+
 // 필드,생성자 생성용 클래스
 	
 	

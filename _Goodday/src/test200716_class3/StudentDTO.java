@@ -1,6 +1,7 @@
 package test200716_class3;
 
 public class StudentDTO {
+// DTO(Data Taransfer Object) : 데이터를 담아서 전달하기 위한 클래스	
 	
 	private String name;
 	private String birth;
@@ -93,6 +94,7 @@ public class StudentDTO {
 	StudentDTO() {
 		
 	}
+	
 	@Override
 	public String toString() {
 		return "StudentDTO [name=" + name + ", birth=" + birth + ", age=" + age + ", gender=" + gender + ", adress="

@@ -69,7 +69,7 @@ public class ArrayList_Ex {
 		stuD1.setName("회원1");
 		stuD1.setAdress("인천광역시");
 		stuD1.setPhone("010-1234-5678");
-		stuL.add(stuD1); // stuL
+		stuL.add(stuD1);
 		
 		System.out.println(stuL.get(0)); 
 		//stuD의 상자의 이름만 출력되는 것, 하지만 만약 StudentDTO에 tostring메소드가 있다면 전체 값이 출력
