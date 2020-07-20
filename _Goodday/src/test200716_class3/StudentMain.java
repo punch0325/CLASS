@@ -20,8 +20,6 @@ public class StudentMain {
 		Application app = new Application();
 		StudentDTO stuD = null;
 		
-		stuD.setName("회원1"); // 세터 메소드를 이용하여 필드 값 지정
-		System.out.println(stuD.getName()); // 게터 메소드를 이용하여 name 필드 값을 출력
 		
 		while (end) {
 			System.out.println("--------------------------------------------------------------------");
@@ -61,6 +59,9 @@ public class StudentMain {
 			
 			
 		}
+		
+		stuD.setName("회원1"); // 세터 메소드를 이용하여 필드 값 지정
+		System.out.println(stuD.getName()); // 게터 메소드를 이용하여 name 필드 값을 출력
 		
 		scan.close();
 	
