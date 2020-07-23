@@ -11,6 +11,10 @@ public class BoardService {
 	public void listView(List<BoardDTO> boardList) {
 		for(int i=0; i<boardList.size(); i++) {
 			System.out.println(boardList.get(i));
+			                   //boardList.get(0)
+			                   //boardList.get(1)
+                               //boardList.get(2)
+                               //boardList.get(3)	
 		}
 	}
 //case 2에서 호출한 listView메소드

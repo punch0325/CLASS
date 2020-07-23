@@ -22,26 +22,24 @@ public class BoardMain {
 			int selectNo = scan.nextInt();
 			
 			switch(selectNo) {
-			case 1:
+			case 1:                        
 				System.out.print("제목 : ");
 				String title = scan.next();
 				System.out.print("내용 : ");
 				String contents = scan.next();
 				System.out.print("비밀번호 : ");
-				String password = scan.next();
+				String password = scan.next();	
+				int contentsNum = boardList.size() + 1;
+				/*-반복문이 돌아가며 입력할 때마다 ArrayList의 인덱스 번호가 하나씩 늘어나는 것을 이용해 contentsNum에 값을 지정
+				  -1을 더해준 것은 인덱스 번호가 0부터 시작하기 때문임*/
 				
 				board = new BoardDTO();
 				board.setTitle(title);
 				board.setContents(contents);
 				board.setPassword(password);
+				board.setContentsNum(contentsNum);
 				/*반복문에 의해 마지막 값만 저장 되지 않도록 반복문 안에 기본생성자로 객체 선언을 해주고 
 				세터를 이용하여 스캐너 값을  DTO클래스의 매개변수 생성자로 넘겨주면서 필드에 지정 */
-	
-				int contentsNum = boardList.size() + 1;
-				board.setContentsNum(contentsNum);
-				/*-반복문이 돌아가며 입력할 때마다 ArrayList의 인덱스 번호가 하나씩 늘어나는 것을 이용해 contentsNum에 값을 지정
-				  -1을 더해준 것은 인덱스 번호가 0부터 시작하기 때문임
-				  -그리고 세터를 이용해 contentsNum 필드에 contentsNum변수의 스캐너 값을 지정해줌*/
 				
 				boardList.add(board);
 				//위의 board의 모든 입력 받은 값을 ArrayList에 추가해줌

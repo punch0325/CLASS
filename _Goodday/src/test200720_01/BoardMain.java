@@ -37,7 +37,6 @@ public class BoardMain {
 				System.out.println("내용을 입력하세요 ");
 				System.out.print("> ");
 				contents = scan.next();
-				
 				int contentsNum = boardList.size()+1;
 				
 				board = new BoardDTO();
