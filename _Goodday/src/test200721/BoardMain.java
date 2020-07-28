@@ -28,7 +28,8 @@ public class BoardMain {
 				System.out.print("내용 : ");
 				String contents = scan.next();
 				System.out.print("비밀번호 : ");
-				String password = scan.next();	
+				String password = scan.next();
+				
 				int contentsNum = boardList.size() + 1;
 				/*-반복문이 돌아가며 입력할 때마다 ArrayList의 인덱스 번호가 하나씩 늘어나는 것을 이용해 contentsNum에 값을 지정
 				  -1을 더해준 것은 인덱스 번호가 0부터 시작하기 때문임*/
@@ -47,6 +48,8 @@ public class BoardMain {
 			case 2:
 				boardService.listView(boardList);
 				//boardService클래스의 listView라는 메소드에 boardList라는 매개값을 넣어서 호출해줌
+				/*즉, 메소드에 있는 List<BoardDTO>타입의 boardList변수에 현재 메인에서 board객체의 값을 추가한 
+				  boardList라는 ArrayList배열을 값으로 넣어주어 메소드 기능을 쓰겠다는 것임 */
 				break;
 			case 3:
 				boardList = boardService.boardModify(boardList);

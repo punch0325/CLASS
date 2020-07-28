@@ -6,8 +6,7 @@ import java.util.Scanner;
 public class BoardService {
 	
 	Scanner scan = new Scanner(System.in);
-	
-	
+			
 	public void listView(List<BoardDTO> boardList) {
 		for(int i=0; i<boardList.size(); i++) {
 			System.out.println(boardList.get(i));
