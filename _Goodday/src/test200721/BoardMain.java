@@ -49,7 +49,7 @@ public class BoardMain {
 				boardService.listView(boardList);
 				//boardService클래스의 listView라는 메소드에 boardList라는 매개값을 넣어서 호출해줌
 				/*즉, 메소드에 있는 List<BoardDTO>타입의 boardList변수에 현재 메인에서 board객체의 값을 추가한 
-				  boardList라는 ArrayList배열을 값으로 넣어주어 메소드 기능을 쓰겠다는 것임 */
+				  boardList라는 ArrayList배열을 값으로 넣어주어 메소드 기능을 쓰겠다는 것임! */
 				break;
 			case 3:
 				boardList = boardService.boardModify(boardList);
