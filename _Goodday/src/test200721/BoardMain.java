@@ -54,7 +54,8 @@ public class BoardMain {
 			case 3:
 				boardList = boardService.boardModify(boardList);
 				/*boardService클래스의 boardModify라는 메소드에 boardList라는 매개값을 넣어 
-				호출해준 것을 boardList(ArrayList배열)에 넣어줌!*/
+				호출해준 것을 boardList(ArrayList배열)에 넣어줌!
+				메인 클래스에서는 항상 최신 값을 가지고 있어야 하기 때문에 boardList에 리턴을 해준것 */
 				break;
 			case 4: 
 				boardList = boardService.boardDelete(boardList);
